@@ -1,0 +1,43 @@
+body{
+    background: black;
+}
+section{
+    height: 100vh;
+}
+video{
+    object-fit: cover;
+    margin-left: 13rem;
+}
+h1{
+    position: absolute;
+    top: 34%;
+    left: 22%;
+    color: #ddd;
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+}
+h1 span{
+    opacity: 0;
+    display:inline-block;
+    animation: anime 1s linear forwards ;
+
+}
+@keyframes anime {
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+h1 span:nth-child(1){
+    animation-delay: 5s;
+}
+h1 span:nth-child(2){
+    animation-delay: 7s;
+}
+h1 span:nth-child(3){
+    animation-delay: 2s;
+}

@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar{
+    background-color: blanchedalmond;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    top: 0%;
+    z-index:1000;
+    
+
+}
+
+.navbar_left{
+    color: black;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar_right{
+    color: black;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color:blanchedalmond ;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.cart {
+    font-size: 20px;
+    vertical-align: middle;
+    
+}
+#MNC {
+    text-align: center;
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: .15em solid orange; 
+    animation: typing 5s steps(40, end); 
+    font-family: 'Arial', sans-serif; 
+    font-size: 50px; 
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+
+
+
+
+.center {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+
+
+.text {
+    position: absolute;
+    top: 50%;
+    right: 70%; 
+    transform: translate(0, -50%);
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.animated-photo {
+    width: 500px; 
+    height: auto; 
+    transition: transform 1s ease, opacity 1s ease; 
+    cursor: pointer; 
+}
+
+.animated-photo:hover + .text {
+    opacity: 1;
+}
+
+.animated-photo:hover {
+    transform: translateX(450px); 
+}
+
+
+
+.image-container {
+    position: relative;
+    margin-bottom: 50px; 
+}
+
+.text:nth-child(2) {
+    right: auto; 
+    left: -85%; 
+}
+
+
+.image-container::before {
+    content: 'Click on the photo for more information.';
+    position: absolute;
+    top: 50%;
+    right: -300px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -9+0px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid black;
+    transform: translateY(-50%);
+}

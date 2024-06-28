@@ -1,0 +1,137 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar{
+    background-color: blanchedalmond;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    top: 0%;
+    z-index:1000;
+    
+
+}
+
+.navbar_left{
+    color: black;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar_right{
+    color: black;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color:blanchedalmond ;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.cart {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+.genre{
+    display: flex;
+    justify-content: space-around; 
+    margin: 80px auto; 
+    max-width: 1200px; 
+}
+.g1 {
+    flex: 1; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    transition: all 0.3s ease; 
+}
+.g1:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+.g1 img{
+    max-width: 100%;
+    height: 50%; 
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+}
+.g1:hover img {
+    transform: scale(1.1); 
+}
+.g1 p{
+    margin-top: 20px;
+    font-size: 18px; 
+} 
+.kids-photos {
+    display: none;
+    justify-content: center; 
+    margin-top: 20px;
+}
+.kids-photos a {
+    margin: 0 10px;
+}
+.kids-photos img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.kids-photos img:hover {
+    transform: scale(1.1);
+}
+.g1:hover .kids-photos {
+    display:flex;
+}
+.kids-photos .baby {
+    display: none;
+    justify-content: center; 
+    margin-top: 10px;
+}
+.kid:hover .baby {
+    display:flex;
+}
+
+.femme-photos
+{
+    display: none;
+    justify-content: center; 
+    margin-top: 20px;
+}
+.femme-photos a {
+    margin: 0 10px;
+}
+.femme-photos img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.g1:hover .femme-photos {
+    display:flex;
+}
+.femme-photos .baby {
+    display: none;
+    justify-content: center; 
+    margin-top: 10px;
+}

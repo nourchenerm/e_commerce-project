@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('a.jpg');
+}
+.navbar{
+    background-color: blanchedalmond;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    top: 0%;
+    z-index:1000;
+    
+
+}
+
+.navbar_left{
+    color: black;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar_right{
+    color: black;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color:blanchedalmond ;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.cart {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+form {
+    max-width:400px;
+    margin: 20px auto;
+    padding: 20px;
+   
+    border-radius: 10px;
+    
+}
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="reset"],button {
+            background-color: rgb(247, 21, 5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+      .ss{
+        padding-left: 20px;
+        padding-right: 50px;
+      }  
+        
+        
+      
+        
+        form {
+            float: right;
+        }
+       
+        
+       
+       
+        
+        
+        
+    
+
+
+
+
+

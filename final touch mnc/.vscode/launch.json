@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.editor.empty.hint": "hidden",
+    "cmake.configureOnOpen": true,
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "launch": {
+        "configurations": [
+        
+        ]
+    }
+}

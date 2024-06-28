@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: blanchedalmond;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    top: 0%;
+    z-index: 1000;
+}
+
+.navbar_left {
+    color: black;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar_right {
+    color: black;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: blanchedalmond;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cart {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px; 
+}
+
+.img1 {
+    width: calc(25% - 20px); 
+    margin-bottom: 20px; 
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    color: #333;
+}
+
+.img1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hh2 {
+    padding: 10px;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.img1:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .img1 {
+        width: calc(25% - 20px); 
+    }
+}
+
+@media (max-width: 576px) {
+    .img1 {
+        width: 50%; 
+    }
+}
+.button-girl {
+    background-color: rgb(221, 240, 251);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 45%;
+    
+}
+
+.button-girl:hover {
+    background-color: rgb(55, 100, 120);
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; 
+}
+
+
+

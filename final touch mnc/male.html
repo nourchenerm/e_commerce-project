@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion</title>
+    <link rel="stylesheet" href="male.css">
+    <script src="script.js"></script>
+
+    <meta http-equiv="refresh" content="3">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar_left">MNC</div>
+        <div class="navbar_right">
+            <a href="project.html">HOME</a>
+            <a href="log.html">SIGN IN</a>
+            <a href="catalogue.html"><u>CATALOGUE</u></a>
+            <a href="LUTUIF.html">LUTYIF</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contactus.html">CONTACT</a>
+            <a href="panier.html"><span class="cart">&#128722;</span><span class="cart-count">0</span></a>       </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <a href="#" id="product1" class="img1 img-hover1">
+            <div class="hh10">
+                <img src="m5.png">
+            </div>
+            <div class="hh2">
+                <h4>plaid shirt</h4>
+                <p><strong>59.99 DT</strong> <u>+20 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Plaid Shirt', '59.99 DT', selectedSize)">Add to Cart</button>
+                </div>
+            </div>
+        </a>
+        <a href="#" id="product2" class="img1 img-hover2" >
+            <div class="hh1">
+                <img src="m6.png">
+            </div>
+            <div class="hh2">
+                <h4>jacket</h4>
+                <p><strong>70.5 DT</strong> <u>+30 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('JACKET', '70.5 DT', selectedSize)">Add to Cart</button>
+                </div>
+                
+                
+            </div>
+        </a>  
+              
+        <a href="#" id="product3" class="img1 img-hover3" >
+            <div class="hh1">
+                <img src="m7.png">
+            </div>
+            <div class="hh2">
+                <h4>blazer</h4>
+                <p><strong>120 DT</strong> <u>+26 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('blazer', '120 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        
+        
+        <a href="#" id="product4" class="img1 img-hover4" >
+            <div class="hh1">
+                <img src="m8.png">
+            </div>
+            <div class="hh2">
+                <h4>Pull-Over</h4>
+                <p><strong>69.99 DT</strong> <u>+60 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Pull-Over', '69.990 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        
+
+
+
+        <a href="#" id="product5" class="img1 img-hover5" >
+            <div class="hh1">
+                <img src="m9.png">
+            </div>
+            <div class="hh2">
+                <h4>Hoodie</h4>
+                <p><strong>89 DT</strong> <u>+20 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Hoodie', '89 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <br>
+        <a href="#" id="product6" class="img1 img-hover6" >
+            <div class="hh1">
+                <img src="m10.png">
+            </div>
+            <div class="hh2">
+                <h4>White Blazer</h4>
+                <p><strong>110 DT</strong> <u>+20 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('White Blazer', '110 DT', selectedSize)">Add to Cart</button>
+                </div>
+                
+            </div>
+        </a>
+        <a href="#" id="product7" class="img1 img-hover7" >
+            <div class="hh1">
+                <img src="m11.png">
+            </div>
+            <div class="hh2">
+                <h4>Jacket</h4>
+                <p><strong>119.998 DT</strong> <u>+29 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Jacket', '119.998 DT', selectedSize)">Add to Cart</button>
+                </div>
+                
+            </div>
+        </a>
+        <a href="#" id="product8" class="img1 img-hover8" >
+            <div class="hh1">
+                <img src="m12.png">
+            </div>
+            <div class="hh2">
+                <h4>Sport Jacket</h4>
+                <p><strong>69.550 DT</strong> <u>+18 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Sport Jacket', '69.550 DT', selectedSize)">Add to Cart</button>
+                </div>
+                
+            </div>
+        </a>
+        <a href="#" id="product9" class="img1 img-hover9" >
+            <div class="hh1">
+                <img src="m13.png">
+            </div>
+            <div class="hh2">
+                <h4>Hoodie</h4>
+                <p><strong>40 DT</strong> <u>+15 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('HOODIE', '40 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product10" class="img1 img-hover10" >
+            <div class="hh1">
+                <img src="14.png">
+            </div>
+            <div class="hh2">
+                <h4>Combi-Confort</h4>
+                <p><strong>260.998 DT</strong> <u>+25 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Combi-Confort', '260.998 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product11" class="img1 img-hover11" >
+            <div class="hh1">
+                <img src="m15.png">
+            </div>
+            <div class="hh2">
+                <h4>Black Jacket</h4>
+                <p><strong>67.96 DT</strong> <u>+50 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Black Jacket', '67.96 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product12" class="img1 img-hover12" >
+            <div class="hh1">
+                <img src="m1 (1).png">
+            </div>
+            <div class="hh2">
+                <h4>MNC Jacket</h4>
+                <p><strong>50 DT</strong> <u>+25 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('MNC Jacket', '50 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product13" class="img1 img-hover13" >
+            <div class="hh1">
+                <img src="m1 (3).png">
+            </div>
+            <div class="hh2">
+                <h4>MNC Coat</h4>
+                <p><strong>70 DT</strong> <u>+15 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('MNC coat', '70 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product14" class="img1 img-hover14" >
+            <div class="hh1">
+                <img src="m1 (5).png">
+            </div>
+            <div class="hh2">
+                <h4>MNC Suits</h4>
+                <p><strong>480.5 DT</strong> <u>+100 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('MNC Suits', '480.5 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product15" class="img1 img-hover15" >
+            <div class="hh1">
+                <img src="m1 (7).png">
+            </div>
+            <div class="hh2">
+                <h4>Black Suits</h4>
+                <p><strong>328.990 DT</strong> <u>+70 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Black Suits', '328.990 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product16" class="img1 img-hover16" >
+            <div class="hh1">
+                <img src="m1 (9).png">
+            </div>
+            <div class="hh2">
+                <h4>Jacket</h4>
+                <p><strong>90.330 DT</strong> <u>+110 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Jacket', '90.330 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product17" class="img1 img-hover17" >
+            <div class="hh1">
+                <img src="m1 (11).png">
+            </div>
+            <div class="hh2">
+                <h4>Sport Coat</h4>
+                <p><strong>100 DT</strong> <u>+80 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Sport Coat', '100 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product18" class="img1 img-hover18" >
+            <div class="hh1">
+                <img src="m1 (13).png">
+            </div>
+            <div class="hh2">
+                <h4>Red Jacket</h4>
+                <p><strong>110.950 DT</strong> <u>+120 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Red Jacket', '110.950 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product19" class="img1 img-hover19" >
+            <div class="hh1">
+                <img src="mmmmmm.png">
+            </div>
+            <div class="hh2">
+                <h4>Hoodie</h4>
+                <p><strong>49.995 DT</strong> <u>+20 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('Hoodie', '49.995 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+        <a href="#" id="product20" class="img1 img-hover20" >
+            <div class="hh1">
+                <img src="pp.png">
+            </div>
+            <div class="hh2">
+                <h4>MNC Jacket</h4>
+                <p><strong>99.999 DT</strong> <u>+35 vendues</u></p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <div class="sizes">
+                    <button onclick="selectSize('S')">S</button>
+                    <button onclick="selectSize('M')">M</button>
+                    <button onclick="selectSize('L')">L</button>
+                    <button onclick="selectSize('XL')">XL</button>
+                    <button onclick="selectSize('XXL')">XXL</button>
+                </div>
+                <div class="add-button" id="addToCartButton">
+                    <button onclick="addToCart('MNC JACKET', '99.999 DT', selectedSize)">Add to Cart</button>
+                </div>
+                            </div>
+        </a>
+
+
+    </div>
+
+
+</body>
+</html>

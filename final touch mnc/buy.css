@@ -1,0 +1,196 @@
+
+.navbar{
+    background-color: blanchedalmond;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    top: 0%;
+    z-index:1000;
+    
+
+}
+
+.navbar_left{
+    color: black;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar_right{
+    color: black;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color:blanchedalmond ;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(blanchedalmond , #e9cf8a 50% , #fff 50%, #fff 100%);
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 410px;
+    background-color: #fff;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .imgbx {
+    position: absolute;
+    min-width: 300px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     box-shadow: 0 10px 10px rgba(0, 0, 0, .3); 
+    overflow: hidden;
+    z-index: 2;
+    left: 0;
+}
+
+.card .imgbx img {
+    max-width: 270px;
+    
+}
+
+
+
+.card .details {
+    min-width: 300px;
+    height: 100%;
+    background-color: #e9cf8a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-transform: capitalize;
+    z-index: 1;
+    position: absolute;
+   
+}
+.card:hover .details {
+    left: 300px;
+}
+
+
+.card .details h3 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.card .details h3 span {
+    font-size: .65em;
+    font-weight: 300;
+    text-transform: none;
+    opacity: .85;
+}
+
+.card .details h4 {
+    color:black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+.card .details p {
+    opacity: .8em;
+    color: #fff;
+    font-size: .85em;
+    line-height: 19px;
+    color: black;
+}
+
+.card .details ul {
+    display: flex;
+    gap: 10px ;
+    list-style: none;
+}
+
+.card .details ul li {
+    list-style: none;
+    border: 2px solid #fff;
+    color:black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    opacity: .5;
+    transition: .5s;
+
+}
+
+.card .details ul li:hover {
+    color: #4ba9e9;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.card .details .group {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card .details .h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2em;
+    color: black;
+}
+
+
+
+
+
+.card:hover {
+    width: 600px;
+    
+}
+
+
+#prod{
+    text-decoration: underline;
+}

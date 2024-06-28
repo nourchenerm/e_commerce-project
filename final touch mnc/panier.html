@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="panier.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar_left">MNC</div>
+        <div class="navbar_right">
+            <a href="project.html">HOME</a>
+            <a href="log.html">SIGN IN</a>
+            <a href="catalogue.html">CATALOGUE</a>
+            <a href="LUTUIF.html">LUTYIF</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contactus.html">CONTACT</a>
+            <a href="panier.html"><span class="cart">&#128722;</span><span class="cart-count">0</span></a>       </div>
+
+        </div>
+    </div>
+    <div class="item">
+        <div class="one">
+            <table border="1px" width="470px">
+                <h2><u>Shopping Cart</u></h2>
+                <tr>
+                    <th>Product</th>
+                    <th>Size</th> <!-- Add a new column for size -->
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th> 
+                </tr>
+                <tbody id="cartItems"></tbody>
+            </table>
+        </div>
+        <div class="two">
+            <div class="nn">
+                <br>
+                <br>
+                <h2>Summary</h2>
+                <hr>
+                <p>ITEMS <span id="itemCount">0</span></p>
+                <h2>Promocode</h2>
+                <input type="text" id="promoCode" placeholder="Enter your code">
+                <button onclick="verifyPromoCode()">Verify</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <h2>TOTAL PRICE </h2>
+                <p id="totalPrice">dt</p>
+                <button class="check" onclick="checkout()">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  let cartCount = 0;
+// Fonction pour afficher les articles du panier
+  function displayCart() {
+    var cartTable = document.getElementById("cartItems");
+    var itemCount = document.getElementById("itemCount");
+    var totalPrice = document.getElementById("totalPrice");
+    
+    cartTable.innerHTML = "";    // Réinitialisation du contenu du tableau du panier
+    var total = 0;
+    
+    cartItems.forEach(function(item) {    // Parcours de chaque article dans le panier
+        var row = cartTable.insertRow(-1);   // Création d'une nouvelle ligne dans le tableau pour chaque article
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1); 
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4); 
+        var cell6 = row.insertCell(5); 
+        
+        cell1.innerHTML = item.name;
+        cell2.innerHTML = item.size; 
+        cell3.innerHTML = item.price;
+        
+        var quantityInput = document.createElement('input');
+        quantityInput.type = 'number';
+        quantityInput.min = '1'; 
+        quantityInput.value = item.quantity;
+        quantityInput.className = 'quantity-input'; 
+        quantityInput.addEventListener('change', function() {
+            updateQuantity(item, parseInt(quantityInput.value));
+        });
+        cell4.appendChild(quantityInput);
+
+        var itemTotal = parseFloat(item.price) * item.quantity;
+        total += itemTotal;
+        cell5.innerHTML = itemTotal;
+        
+        var deleteIcon = document.createElement('i');
+        deleteIcon.className = 'delete-icon bx bx-x';
+        deleteIcon.addEventListener('click', function() {
+            deleteItem(item);
+        });
+        cell6.appendChild(deleteIcon);
+    });
+    
+    itemCount.textContent = cartItems.length;
+    totalPrice.textContent = calculateTotal(total).toFixed(2) + " dt";
+    updateCartCount();
+}
+
+function updateCartCount() {
+    cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+    const cartCountElement = document.querySelector('.cart-count');
+    cartCountElement.textContent = cartCount;
+}
+
+function deleteItem(item) {
+    var index = cartItems.indexOf(item); 
+    if (index !== -1) {
+        cartItems.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cartItems)); 
+        displayCart(); 
+        updateCartCount();
+    }
+}
+
+function calculateTotal(total) {
+    var promoCodeInput = document.getElementById("promoCode").value.toLowerCase();
+    var discount = 0; 
+    if (promoCodeInput === "mnc") {
+        discount = 0.2;
+    }
+    return total * (1 - discount);
+}
+
+function updateQuantity(item, newQuantity) {
+    item.quantity = newQuantity; 
+    localStorage.setItem('cart', JSON.stringify(cartItems)); 
+    displayCart(); 
+    updateCartCount();
+}
+
+function checkout() {
+    var name = prompt("Please enter your name:");
+    var phoneNumber = prompt("Please enter your phone number:");
+    var address = prompt("Please enter your address:");
+
+    var total = 0;
+    cartItems.forEach(function(item) {
+        total += parseFloat(item.price) * item.quantity;
+    });
+    
+    var discountedTotal = calculateTotal(total);
+    
+    cartItems = [];
+    localStorage.removeItem('cart');
+    displayCart();
+    
+    var totalPrice = document.getElementById("totalPrice");
+    totalPrice.textContent = discountedTotal.toFixed(2) + " dt";
+    alert("Checkout completed. Thank you!");
+}
+
+function verifyPromoCode() {
+    var promoCodeInput = document.getElementById("promoCode").value.toLowerCase();
+    if (promoCodeInput === "mnc") {
+        alert("Promo code applied: 20% discount will be added.");
+        displayCart(); 
+    } else {
+        alert("Invalid promo code. Please enter 'mnc' for a 20% discount.");
+    }
+}
+
+window.onload = function() {
+    displayCart();
+    updateCartCount();
+}
+
+    </script>
+</body>
+</html>
